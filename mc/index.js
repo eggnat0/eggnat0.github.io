@@ -100,7 +100,6 @@ const SZ = {
     g_s_k(key) {
         const signature = CryptoJS.SHA1(key);
         const shaSignature = CryptoJS.SHA1(signature).toString().toUpperCase();
-        console.log(key,shaSignature);
         
         return shaSignature.substring(0, 32);
     },
